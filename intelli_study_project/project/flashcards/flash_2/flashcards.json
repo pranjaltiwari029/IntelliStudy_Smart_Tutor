@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is Python?",
+        "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability.",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "How to define a function in Python?",
+        "answer": "def greet(name):\n    return f\"Hello, {name}!\"",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is a class in Python?",
+        "answer": "class Dog:\n    def __init__(self, name):\n        self.name = name",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is list comprehension?",
+        "answer": "It's a concise way to create lists using a single line of code like [x for x in range(10)].",
+        "difficulty": "Medium"
+    }
+]

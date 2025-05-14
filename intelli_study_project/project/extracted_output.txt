@@ -1,0 +1,1180 @@
+Unit-1
+The Programming Cycle for
+Python
+Feb-25 2 Programming
+Run
+with some input
+Write/Edit
+OK?
+NO
+YES
+YES
+NO More
+Inputs?
+Feb-25 Programming 3
+The first screen on the jupyter notebook
+IN[1]: Python Shell Prompt
+IN[2]:
+User Commands
+IN[3]:
+(Statements)
+IN[4]: ( )
+Outputs
+Python Shell is Interactive
+Feb-25 Programming 5
+Interacting with Python Programs
+• Python program communicates its results to user using print
+• Python 3 uses input to read user input as a string (str)
+Feb-25 Programming 6
+input
+• Takes a string input or
+• Returns the user typed value as a string
+IN[1]:
+( )
+IN[2]:
+IN[3]:
+Feb-25 Programming 7
+Type Conversion and Input
+Feb-25 Programming 8
+Elements of Python
+• A Python program is a sequence of definitions and commands
+(statements)
+• Commands manipulate objects
+• Each object is associated with a Type
+• Type:
+• A set of values
+• A set of operations on these values
+• Expressions: An operation (combination of objects and operators)
+Feb-25 Programming 9
+Types in Python
+• int
+• Bounded integers, e.g. 732 or -5
+• float
+• Real numbers, e.g. 3.14 or 2.0
+• long
+• Long integers with unlimited precision
+• str
+• Strings, e.g. ‘hello’ or ‘C’
+Feb-25 Programming 10
+Types in Python
+• Scalar
+• Indivisible objects that do not have internal structure
+• int (signed integers), float (floating point), bool
+(Boolean), NoneType
+• NoneType is a special type with a single value
+• The value is called None
+• Non-Scalar
+• Objects having internal structure
+• str (strings)
+Feb-25 Programming 11
+Example of Types
+Feb-25 Programming 12
+Type Conversion (Type Cast)
+• Conversion of value of one type to other
+• We are used to int ↔ float conversion in Math
+• Integer 3 is treated as float 3.0 when a real number is expected
+• Float 3.6 is truncated as 3, or rounded off as 4 for integer contexts
+• Type names are used as type converter functions
+Feb-25 Programming 13
+Type Conversion Examples
+Note that float to int conversion
+is truncation, not rounding off
+Feb-25 Programming 14
+Operators
+• Arithmetic + - * // / % **
+• Comparison
+== != > < >= <=
+• Assignment
+= += -= *= //= /= %= **=
+• Logical and or not
+• Bitwise
+& | ^ ~ >> <<
+• Membership
+in not in
+• Identity
+is is not
+Feb-25 Programming 15
+Membership operators
+• Membership operators are used to check if a value is present in a
+sequence, such as strings, lists, or tuples. Python has two
+membership operators: in and not in.
+• The in operator checks if a value exists in a sequence and returns True
+if it does, otherwise it returns False.
+• The not in operator checks if a value does not exist in a sequence and
+returns True if it does not, otherwise it returns False
+Identity operators
+• Identity operators are used to compare the memory locations of two
+objects. Python has two identity operators: is and is not.
+• The is operator returns True if both variables point to the same object
+in memory, otherwise it returns False.
+• The is not operator returns True if both variables do not point to the
+same object in memory, otherwise it returns False
+Variables
+m
+• A name associated with an object
+• Assignment used for binding 64
+m = 64;
+try
+c
+c = ‘try’;
+3.1416
+f = 3.1416;
+f
+• Variables can change their
+bindings
+2.7183
+f = 2.7183;
+Feb-25 Programming 18
+Assignment Statement
+• A simple assignment statement
+Variable = Expression;
+• Computes the value (object) of the expression on the right hand side
+expression (RHS)
+• Associates the name (variable) on the left hand side (LHS) with the
+RHS value
+= is known as the assignment operator.
+Feb-25 Programming 19
+Multiple Assignments
+• Python allows multiple assignments
+x, y = 10, 20
+Binds x to 10 and y to 20
+• Evaluation of multiple assignment statement:
+• All the expressions on the RHS of the = are first evaluated
+before any binding happens.
+• Values of the expressions are bound to the corresponding
+variable on the LHS.
+x, y = 10, 20
+x, y = y+1, x+1
+x is bound to 21
+and y to 11 at the
+end of the program
+Feb-25 Programming 20
+Programming using Python
+Operators and Expressions
+2/11/2025 21 Programming
+Binary Operations
+Op Meaning Example Remarks
++ Addition 9+2 is 11
+9.1+2.0 is 11.1
+- Subtraction 9-2 is 7
+9.1-2.0 is 7.1
+* Multiplication 9*2 is 18
+9.1*2.0 is 18.2
+/ Division 9/2 is 4.25 In Python3
+9.1/2.0 is 4.55 Real div.
+// Integer Division 9//2 is 4
+% Remainder 9%2 is 1
+2/11/2025 Programming 22
+The // operator
+• Also referred to as “integer division”
+• Result is a whole integer (floor of real division)
+• But the type need not be int
+• the integral part of the real division
+• rounded towards minus infinity (−∞)
+• Examples
+9//4 is 2 (-1)//2 is -1 (-1)//(-2) is 0
+1//2 is 0 1//(-2) is -1 9//4.5 is 2.0
+2/11/2025 Programming 23
+The % operator
+• The remainder operator % returns the
+remainder of the result of dividing its
+first operand by its second.
+9%4 is 1 (-1)%2 is 1 (-1)//(-2) is 0
+9%4.5 is 0.0 1%(-2) is 1 1%0.6 is 0.4
+2/11/2025 Programming 24
+Conditional Statements
+• In daily routine
+• If it is very hot, I will skip exercise.
+• If there is a quiz tomorrow, I will
+first study and then sleep.
+Otherwise I will sleep now.
+• If I have to buy coffee, I will
+go left. Else I will go
+straight.
+Feb-25 Programming 25
+if-else statement
+• Compare two integers and print the min.
+if x < y:
+1. Check if x is less
+than y.
+print (x)
+2. If so, print x
+else:
+3. Otherwise, print y.
+print (y)
+print (‘is the minimum’)
+Feb-25 Programming 26
+Indentation
+• Indentation is important in Python
+• grouping of statement (block of statements)
+• no explicit brackets, e.g. { }, to group statements
+x,y = 6,10
+Run the program
+x y
+if x < y:
+6 10
+print (x)
+else:
+print (y)
+Output
+print (‘is the min’)
+6
+Feb-25 Programming 27
+if statement (no else!)
+• General form of the if statement
+if boolean-expr :
+S1
+S2
+S1
+• Execution of if statement
+• First the expression is evaluated.
+S2
+• If it evaluates to a true value, then S1 is executed and
+then control moves to the S2.
+• If expression evaluates to false, then control moves to
+the S2 directly.
+Feb-25 Programming 28
+if-else statement
+• General form of the if-else statement
+if boolean-expr :
+S1
+else:
+S1 S2
+S2
+S3
+• Execution of if-else statement
+S3
+• First the expression is evaluated.
+• If it evaluates to a true value, then S1 is executed and
+then control moves to S3.
+• If expression evaluates to false, then S2 is executed and
+then control moves to S3.
+• S1/S2 can be blocks of statements!
+Feb-25 Programming 29
+Nested if, if-else
+if a <= b:
+if a <= c:
+…
+else:
+…
+else:
+if b <= c) :
+…
+else:
+…
+Feb-25 Programming 30
+Elif
+• A special kind of nesting is the chain of if-else-if-
+else-… statements
+• Can be written elegantly using if-elif-..-else
+if cond1: if cond1:
+s1 s1
+else: elif cond2:
+if cond2: s2
+s2 elif cond3:
+else: s3
+if cond3: elif …
+s3 else
+else: last-block-of-stmt
+…
+Feb-25 Programming 31
+Summary of if, if-else
+•if-else, nested if's, elif.
+•Multiple ways to solve a problem
+• issues of readability, maintainability
+and efficiency
+Feb-25 Programming 32
+Class Quiz
+• What is the value of expression:
+(5<2) and (3/0 > 1)
+a) Run time crash/error
+b) I don’t know / I don’t care
+c) False
+d) True
+The correct answer is
+False
+Feb-25 Programming 33
+Short-circuit Evaluation(imp)
+• Do not evaluate the second operand of binary short-
+circuit logical operator if the result can be deduced
+from the first operand
+• Also applies to nested logical operators
+not( (2>5) and (3/0 > 1) ) or (4/0 < 2)
+true
+false false true
+Evaluates to true
+Feb-25 Programming 34
+3 Factors for Expr Evaluation
+• Precedence
+• Applied to two different class of operators
+• + and *, - and *, and and or, …
+• Associativity
+• Applied to operators of same class
+• * and *, + and -, * and /, …
+• Order
+• Precedence and associativity identify the operands for each
+operator
+• Not which operand is evaluated first
+• Python evaluates expressions from left to right
+• While evaluating an assignment, the right-hand side is evaluated
+before the left-hand side.
+Feb-25 Programming 35
+Assignment-(I)A(20th jan 2025)
+• Q1 Any number is input through a keyboard. WAP to find out it is an
+odd or an even number
+• Q2 WAP to check if the year entered is a leap year
+• Q3 WAP to check if a triangle is valid or not, when the three angles of
+the triangle are entered through the keyboard.
+• Q4 WAP to find the absolute value of a number entered through the
+keyboard.
+• Q5 calculate the area of the circle
+• Q6 calculate the area of rectangle .
+Class Quiz
+• What is the output of the following program:
+y = 0.1*3
+if y != 0.3:
+print ('Launch a Missile')
+else:
+print ("Let's have peace")
+Launch a Missile
+Feb-25 Programming 37
+Caution about Using Floats
+• Representation of real numbers in a computer can not
+be exact
+• Computers have limited memory to store data
+• Between any two distinct real numbers, there are infinitely
+many real numbers.
+• On a typical machine running Python, there are 53 bits
+of precision available for a Python float
+Feb-25 Programming 38
+Caution about Using Floats
+• The value stored internally for the decimal number 0.1
+is the binary fraction
+0.00011001100110011001100110011001100110011001100110011010
+• Equivalent to decimal value
+0.1000000000000000055511151231257827021181583404541015625
+• Approximation is similar to decimal approximation 1/3
+= 0.333333333...
+• No matter how many digits you use, you have an
+approximation
+Feb-25 Programming 39
+Comparing Floats
+• Because of the approximations, comparison of floats is
+not exact.
+• Solution?
+• Instead of
+x == y
+use
+abs(x-y) <= epsilon
+where epsilon is a suitably chosen sm(doubt)all value
+Feb-25 Programming 40
+Programming using Python
+Loops
+Feb-25 41 Python Programming
+Printing Multiplication Table
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50
+Feb-25 Python Programming 42
+Program…
+n = int(input('Enter a number: '))
+Too much
+print (n, 'X', 1, '=', n*1)
+repetition!
+print (n, 'X', 2, '=', n*C2a)n I avoid
+it?
+print (n, 'X', 3, '=', n*3)
+print (n, 'X', 4, '=', n*4)
+print (n, 'X', 5, '=', n*5)
+print (n, 'X', 6, '=', n*6)
+….
+Feb-25 Python Programming 43
+Printing Multiplication Table
+Loop Entry
+Input n
+i = 1
+Loop Exit
+i <=10
+TRUE FALSE
+Print n X i = n*i
+Stop
+i = i+1
+Loop
+Feb-25 Python Programming 44
+Printing Multiplication Table
+Input n
+i = 1
+n = int(input('n=? '))
+FALSE
+TRUE
+i <=10
+i = 1
+Print n x i = ni
+Stop
+i = i+1
+while (i <= 10) :
+print (n ,'X', i, '=', n*i)
+i = i + 1
+print ('done‘)
+Feb-25 Python Programming 45
+While Statement
+while (expression):
+S1 FALSE
+expression
+S2
+TRUE
+S1
+S2
+1. Evaluate expression
+2. If TRUE then
+a) execute statement1
+b) goto step 1.
+3. If FALSE then execute statement2.
+Feb-25 Python Programming 46
+For Loop
+Print the sum of the reciprocals of the
+•
+first 100 natural numbers.
+rsum=0.0# the reciprocal sum
+# the for loop
+for i in range(1,101):
+rsum = rsum + 1.0/i
+print ('sum is', rsum)
+Feb-25 Python Programming 47
+For loop in Python
+• General form
+for variable in sequence:
+stmt
+Feb-25 Python Programming 48
+For loop example( print even numbers)
+• for i in range(0, 10, 2):
+• print(i)
+range
+• range(s, e, d)
+• generates the list:
+[s, s+d, s+2*d, …, s+k*d]
+where s+k*d < e <= s+(k+1)*d
+• range(s, e) is equivalent to range(s, e, 1)
+• range(e) is equivalent to range(0, e)
+Exercise: What if d is negative? Use python
+interpreter to find out.
+Feb-25 Python Programming 50
+While loop for odd numbers
+• while(i<=10):
+• if i%2 !=0:
+• print(i)
+• i=i+1
+•
+Quiz
+• What will be the output of the following program
+i = 0
+count = 0
+while count < 10:
+i = i + 1
+if i % 2 == 0:
+continue # Skip even numbers
+print(i)
+count = count + 1
+Feb-25 Python Programming 52
+Break and continue statement
+• # Example of break statement
+• numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+• for i in numbers:
+• if i == 6:
+• break
+• print(i)
+output
+Example of continue stmt
+• # Example of continue statement
+• numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+• for i in numbers:
+• if i % 2 == 0:
+• continue
+• Print(i)
+snapshot
+Assignment (I)B( 21st Jan 2025)
+• Q 7 WAP that receives 3 sets of p, n, r and calculates the simple
+interest.( input data for three people)
+• Q8WAP that prints the numbers from 1 to 10 all on the same line.
+• Q9 WAP to calculate the factorial of any number.
+• Q10 WAP to print prime numbers from 1 to 300
+• Q11 WAP to print the multiplication table of any no entered by the
+user.
+Q12 calculate the salary of the person by asking the user to enter the
+salary components.( like basic,DA, HRA, TA)Input basic salary and TA
+and calculate the rest .
+Programming using Python
+f
+( )
+unctions
+Feb-25 58 Programming, Functions
+Parts of a function
+Input
+f
+Output
+Feb-25 Programming, Functions 59
+def max (a, b):
+‘’’return maximum among a and b’’’
+keyword if (a > b):
+return a 2 arguments
+a and b
+else:
+(formal args)
+Function Name return b
+Body of thefunction,
+x = max(6, 4)
+indented w.r.t the
+def keyword
+Documentation comment
+Call to the function.
+(docstring), type
+Actual args are 6 and 4.
+help <function-name>
+on prompt to get help for the function
+Feb-25 Programming, Functions 60
+def max (a, b):
+‘‘‘return maximum among a and b’’’
+if (a > b):
+return a
+else:
+return b
+In[3] : help(max)
+Help on function max in module __main__:
+max(a, b)
+return maximum among a and b
+Feb-25 Programming, Functions 61
+Keyword Arguments
+Note use of [0]
+def printName(first, last, initials) :
+to get the first
+if initials: character of a
+string. More on
+print (first[0] + '. ' + last[0] + '.')
+this later.
+else:
+print (first, last)
+Call Output
+printName('Acads', 'Institute', False) Acads Institute
+printName('Acads', 'Institute', True) A. I.
+printName(last='Institute', initials=False, first='Acads') Acads Institute
+printName('Acads', initials=True, last='Institute') A. I.
+Feb-25 Programming, Functions 62
+Keyword( named Arguments)
+• from math import sqrt
+• def quadratic(a, b, c):
+• x1 = -b / (2*a)
+• x2 = sqrt(b**2 - 4*a*c) / (2*a)
+• return (x1 + x2), (x1 - x2)
+• When we call this function, we can pass each of our three arguments
+in two different ways.
+• We can pass our arguments as positional arguments like this:
+Positional and keyword Arguments
+• >>> quadratic(31, 93, 62)( Positional Arguments)
+• (-1.0, -2.0)
+• Or we can pass our arguments as keyword arguments like this:
+• >>> quadratic(a=31, b=93, c=62)( named Arguments)
+• (-1.0, -2.0)
+Keyword Arguments
+• Parameter passing where formal is bound to actual using formal's
+name
+• Can mix keyword and non-keyword arguments
+• All non-keyword arguments precede keyword arguments in the call
+• Non-keyword arguments are matched by position (order is important)
+• Order of keyword arguments( named arguments) is not important
+Feb-25 Programming, Functions 66
+Another example
+1.def details(name, age, grade):
+2. print("Details of student:", name)
+3. print("age: ", age)
+4. print("grade: ", grade)
+5.details("Raghav", 12, 6)
+6.details("Santhosh", grade = 6, age = 12)
+Positional Arguments
+• The function has three parameters-name, age and grade. So, it
+accepts three arguments.
+• In the first function call:
+• name is replaced with "Raghav."
+• age is replaced with 12 and
+• grade is replaced with 6
+• In the first function call, the order of passing the arguments matter.
+The parameters accept the arguments in the given order only.
+Keyword arguments
+1.details("Santhosh", grade = 6, age = 12)
+• Here, the first argument, "Santhosh", is passed based on its position
+to name, and the next two arguments are passed by assignment to
+their respective parameters. As you can observe, here, the position
+didn't matter.
+• Keyword arguments must always follow positional arguments. If
+not, Python will raise a syntax error:
+details("Santhosh", age = 6, 12) ^
+SyntaxError: positional argument follows keyword argument
+Default Values
+def printName(first, last, initials=False) :
+if initials:
+print (first[0] + '. ' + last[0] + '.')
+Note the use
+else:
+of “default”
+print (first, last) value
+Call Output
+printName('Acads', 'Institute') Acads Institute
+printName(first='Acads', last='Institute', initials=True) A. I.
+printName(last='Institute', first='Acads') Acads Institute
+printName('Acads', last='Institute') Acads Institute
+Feb-25 Programming, Functions 70
+Default Values
+• Allows user to call a function with fewer arguments
+• Useful when some argument has a fixed value for most of the calls
+• All arguments with default values must be at the end of argument list
+• non-default argument can not follow default argument
+Feb-25 Programming, Functions 71
+Globals
+• Globals allow functions to communicate with each other indirectly
+• Without parameter passing/return value
+• Convenient when two seemingly “far-apart” functions want to share
+data
+• No direct caller/callee relation
+• If a function has to update a global, it must re-declare the global
+variable with global keyword.
+Feb-25 Programming, Functions 72
+Globals
+PI = 3.14
+>>> print(area (100))
+def perimeter(r):
+31400.0
+return 2 * PI * r
+>>> print(perimeter(10))
+def area(r):
+62.800000000000004
+return PI * r * r
+>>> update_pi()
+def update_pi():
+>>> print(area(100))
+global PI
+31415.999999999996
+PI = 3.14159 >>> print(perimeter(10))
+62.832
+defines PI to be of float type with value 3.14.
+PI can be used across functions. Any change to
+PI in update_pi will be visible to all due to the
+use of global.
+Feb-25 Programming, Functions 73
+Assignment- (I)C( based on functions)(28th jan
+2025)
+• Q13 WAP to input three integers from keyboard and get their sum
+and product calculated.
+• Q14 Define a function leap and implement it.
+• Q15 WAF to calculate the largest among three numbers
+• Q16 WAF to calculate the LCM of few numbers.
+• Q17 WAF to check if the number is odd or even.
+recursion
+• Function calling it itself
+Recursive function for factorial
+• Def fact(n):
+• If(n==1 or n==0):
+• Return 1
+Else:
+return n*fact(n-1)
+A= int(input(‘ enter the number’)
+F=fact(a)
+Print(‘the factorial of a number is ‘,f)
+Assignment – (I)D(29th jan)
+• Q 18 write the recursive for factorial,
+• Q 19Practice use of global variables
+• Q 20 Apply recursion in one more problem(fibbonacci/any other)
+Assignment (I)E(30th jan 2025)
+• 21 WAP to print the digit at one’s place of a number
+• ( sum of all the digits)
+• 22 WAP to calculate the bill amount for an item given its quantity sold,
+value, discount and tax (use default argument function, with default
+values of discount and tax).
+• 23 WAP to calculate student’s result based on two examinations, 1
+sports event,and 3 activities conducted. The weightage of activities=30%,
+sports=20% and examination=50%
+• 24 WAP to print the ASCII value of a character. (ord(‘A’),char(65))
+• 25 WAP to read a character in uppercase and then print it in lower
+case.(lower(),upper())-C
+Contd(30th jan 2025)
+• 26 Income tax for individual is computed on slab rates as follows.
+• Income Tax payable
+• Upto Rs. 50,000 Nil
+• From Rs. 50,001 to Rs. 60,000 10% of the excess over Rs. 50,000
+• From Rs. 60,001 to Rs. 1,00,000 20% of the excess over Rs. 60,000
+• Above Rs. 1,00,000 30% of the excess over Rs. 1,00,000
+• Write a program that reads the income and print the income tax due.
+• 27 Write a program to check a number for perfect e.g. 6 is a perfect number.
+• 28 WAP to check whether a number entered is circular or not.
+• 29 WAP to check whether a number is palindrome number or not.(For example, 12321 is a palindrome,)
+• 30 Check a number for Armstrong number e.g. 153 is Armstrong number (1*1*1+5*5*5+3*3*3=153)
+Assignment (I)F(30th jan)
+• Q30. Write a python program to swap two numbers entered by the user. You are not allowed to use a third
+variable.
+• Q 31 Write a Python program that has a user defined function to accept the coefficients of a quadratic
+equation in variables and calculates its determinant. For example : if the coefficients are stored in the
+variables a, b ,c then calculate the determinant as b2-4ac. Write the appropriate condition to check
+determinants on positive, zero and negative and output appropriate results.
+Some terms
+Lazy evaluation
+• In programming language theory, lazy evaluation, or call-by-
+need, is an evaluation strategy which delays the evaluation of
+an expression until its value is needed (non-strict evaluation)
+and which also avoids repeated evaluations (sharing).
+• The benefits of lazy evaluation include:
+• The ability to define control flow (structures) as abstractions
+instead of primitives.
+example
+• def lazy_add(a, b_func):
+• return a + b_func
+• # A function representing a costly computation
+• def compute_b():
+• print("Computing value for b...")
+• return 5
+• # Using lazy evaluation
+• result = lazy_add(10, compute_b())
+• print("Result:", result)
+contd
+• In this example, lazy_add() takes two arguments: a and b_func, where
+b_func is a function that computes the value for b. However, b_func() is not
+immediately evaluated when lazy_add() is called. Instead, its evaluation is
+delayed until it's actually needed, i.e., when b_func() is invoked inside
+lazy_add().
+• This way, if b is not needed for certain inputs or conditions, the costly
+computation inside b_func() won't be executed unnecessarily, thus saving
+computation time and resources.
+• When you run this code, you'll observe that the message "Computing value
+for b..." is only printed when b_func() is called within lazy_add(),
+demonstrating the lazy evaluation of the function argument.
+Another example of lazy evaluation
+• # Define a lazy variable using a lambda function
+• lazy_value = lambda: 10 * 5 # This calculation is deferred until the value is
+needed
+• # Main program
+• print("Doing something else...")
+• # At this point, the calculation is not yet performed
+• print("Now let's get the value:")
+• value = lazy_value() # This triggers the calculation
+• print("Value:", value)
+Importing Modules
+• Calculator.py
+• Def display(a,b):
+• Print(“numbers are “,a,b)
+Def addition(a,b):
+return(a+b)
+Def subtraction(a,b):
+return(a-b)
+Def multiply(a,b)
+return(a*b)
+Import the modules in new file
+• Import calculator as cal
+• X= int(input(‘enter the first number’)
+• Y= int(input(‘enter the second number’)
+• Cal.display(x,y)
+• print(‘sum of two numbers is =‘,cal.add(x,y))
+• print(‘subtraction of two numbers is =‘,cal.subtract(x,y))
+• Print(‘multiplication of two numbers is =‘,cal.Multiply(x,y))
+Another example
+• Import os
+• Import calculator
+• Import math
+• Print(os.getcwd())## print the working directory
+• Print(_name_)
+• Calculator.display(20,10)
+• C=math.sin(0.5)
+• D=math.cos(0.5)
+• Calculator.add(c,d)
+Example of using importing random
+• import random
+• # Generate a random number between 1 and 10
+• random_number = random.randint(1, 10)
+• print("Random number:", random_number)
+snapshot
+Another example
+Command line arguments
+• Python Command line arguments
+• The Python supports the programs that can be run on the command
+line, complete with command line arguments. It is the input
+parameter that needs to be passed to the script when executing
+them.
+• It means to interact with a command-line interface for the scripts.
+• It provides a getopt module, in which command line arguments and
+options can be parsed.
+Access command line arguments
+• The Python sys module provides access to command-line arguments
+via sys.argv.
+example
+• import sys
+• print(type(sys.argv))
+• print('The command line arguments are:')
+• for i in sys.argv:
+• print(i)
+output
+Command line Arguments
+• The arguments that are given after the name of the program in the
+command line shell of the operating system are known as Command
+Line Arguments. Python provides various ways of dealing with these
+types of arguments. The three most common are:
+• Using sys.argv
+• Using getopt module
+• Using argparse module
+Using sys
+• # Python program to demonstrate
+• # command line arguments
+• import sys
+• # total arguments
+• n = len(sys.argv)
+• print("Total arguments passed:", n)
+•
+• # Arguments passed
+• print("\nName of Python script:", sys.argv[0])
+•
+• print("\nArguments passed:", end = " ")
+• for i in range(1, n):
+• print(sys.argv[i], end = " ")
+•
+Another example
+• # Addition of numbers
+• Import sys
+• N=4
+• Sum = 0
+• # Using sys module
+• for i in range(1, n):
+• Sum += int(sys.argv[i])
+•
+• print("\n\nResult:", Sum)
+Implementing Command line arguments
+• 1 go to d:
+• 2 d:/mamta/ python/python commandline.py 2 3 4 5
+output
+• Try.py 2 3 4 5
+• 14 (ans)
+Argparser
+• The standard Python library argparse used to incorporate the parsing
+of command line arguments. Instead of having to manually set
+variables inside of the code, argparse can be used to add flexibility
+and reusability to your code by allowing user input values to be
+parsed and utilized.
+Installation
+• Since argparse is part of the standard Python library, it should already
+be installed. However, if it’s not, you can install it using the following
+command:
+• pip install argparse
+Code 1
+• # Import the library
+• import argparse
+• # Create the parser
+• parser = argparse.ArgumentParser()
+• # Add an argument
+• parser.add_argument('name', type=str, required=True)
+• # Parse the argument
+• args = parser.parse_args()
+• # Print "Hello" + the user input argument
+• print('Hello,', args.name)
+Program for this commandline2.py in c:\mamta\python
+snapshot
+output
+• C:/> python hello.py --name Sam
+• Hello, Sam
+Squaring a Number using Argparser
+• import argparse
+• parser = argparse.ArgumentParser()
+• parser.add_argument("square", help="display a square of a given
+number", type=int)
+• args = parser.parse_args()
+• print(args.square**2)
+Solution on command prompt
+Calculator using argparser
+• import argparse
+• def main():
+• parser = argparse.ArgumentParser(description='A simple calculator')
+•
+• # Define arguments
+• parser.add_argument('operation', choices=['add', 'subtract', 'multiply', 'divide'],
+• help='Operation to perform: add, subtract, multiply, divide')
+• parser.add_argument('num1', type=float, help='First number')
+• parser.add_argument('num2', type=float, help='Second number')
+•
+• # Parse arguments
+• args = parser.parse_args()
+•
+• # Perform the operation based on user input
+• result = None
+• if args.operation == 'add':
+• result = args.num1 + args.num2
+• elif args.operation== 'subtract':
+• result = args.num1 - args.num2
+• elif args.operation== 'multiply':
+• result = args.num1 * args.num2
+• elif args.operation== 'divide':
+• if args.num2 == 0:
+• print("Error: Cannot divide by zero!")
+• return
+• result = args.num1 / args.num2
+•
+• print(f"Result of {args.operation} {args.num1} and {args.num2} is: {result}")
+• if __name__ == '__main__':
+• main()
+Assignment (I)G
+• Q 32 Make a calculator.py file and import various functions in other
+file.
+• Q 33Implement command line arguments( display all the aruments)
+• Q 34 Implement command line arguments(add all the numbers
+passed on command line)
+• Q 35 Implement a calculator using Command line arguments using
+argparser.
+Docstring
+• Its purpose is to document the purpose, usage, and behavior of the
+code entity it belongs to. Docstrings are commonly used to provide
+documentation for Python code, making it easier for other developers
+to understand and use the code effectively.
+• Docstrings are typically enclosed in triple quotes (''' or """) and can
+span multiple lines.
+• They are accessed via the __doc__ attribute of the module, function,
+class, or method. Python's built-in help function also uses docstrings
+to display documentation when it's available.
+Docstring
+• def greet(name):
+• """
+• This function greets the person with the given name.
+• Parameters:
+• name (str): The name of the person to greet.
+• Returns:
+• str: A greeting message.
+• """
+• return f"Hello, {name}!"
+• # Accessing the docstring using __doc__ attribute
+• print(greet.__doc__)
+• # Using help function to access documentation
+• help(greet)
+• # calling the greet function
+• Greet(‘mamta’)
+Membership Operator
+• The membership operators (in and not in) are used to test whether a
+value exists within a sequence (such as a list, tuple, or string).
+Membership opeartor
+• # Define a list of fruits
+• fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi']
+• # Check if 'banana' is in the list of fruits
+• if 'banana' in fruits:
+• print("Yes, 'banana' is in the list of fruits.")
+• else:
+• print("No, 'banana' is not in the list of fruits.")
+• # Check if 'watermelon' is in the list of fruits
+• if 'watermelon' in fruits:
+• print("Yes, 'watermelon' is in the list of fruits.")
+• else:
+• print("No, 'watermelon' is not in the list of fruits.")
+• In Python, mutable and immutable refer to whether an object's value
+can be changed after it is created.
+• 1. Immutable Objects 🚫 (Cannot Change)
+• Immutable objects cannot be modified once created. If you try to
+modify them, a new object is created instead.
+• Example of Immutable Objects
+• x = 10 # Integer (Immutable)
+• print(id(x)) # Memory address of x
+• x = x + 1 # This creates a new integer object
+• print(id(x)) # Different memory address → Immutable!
+More Immutable Types:
+•int
+•float
+•bool
+•str
+•tuple
+Mutable Objects ✅ (Can Change)
+• Mutable objects can be modified after creation, without changing
+their memory address.
+• my_list = [1, 2, 3] # List (Mutable)
+• print(id(my_list)) # Memory address of my_list
+• my_list.append(4) # Modify the list
+• print(id(my_list)) # Same memory address → Mutable!
+• print(my_list) # Output: [1, 2, 3, 4]
+immutable variables
+• In Python, immutable variables are those whose values cannot be
+changed after they are created. Once an immutable object is created,
+its state cannot be modified.
+Example
+• # Immutable variables
+• immutable_var = 5
+• immutable_var = "hello"
+• immutable_var = (1, 2, 3)
+• # Attempting to modify an immutable object will result in an error
+• immutable_var[0] = 10 # This will raise a TypeError because tuples
+are immutable
+Python Interactive shells
+• Python Command-Line Interface (CLI):
+• The standard Python interpreter provides a basic interactive shell that you can access by
+running the python command in your terminal or command prompt.
+• IPython:
+• IPython is an enhanced interactive shell for Python, providing additional features such as
+tab completion, syntax highlighting, magic commands, object introspection, and more. It
+is often used for interactive data analysis, scientific computing, and prototyping.
+• Jupyter Notebook:
+• Jupyter Notebook is a web-based interactive computing environment that allows you to
+create and share documents containing live code, equations, visualizations, and
+explanatory text. It supports various programming languages, including Python.
+Notebooks consist of cells where you can write and execute Python code interactively.
+Contd…
+• JupyterLab:
+• JupyterLab is the next-generation web-based user interface for Project Jupyter. It
+provides an interactive environment for working with Jupyter notebooks, text files,
+terminals, and other computational resources.
+• Visual Studio Code (VS Code):
+• VS Code is a popular code editor that provides an integrated Python interactive shell
+through its Python extension. You can open a Python interactive window within VS Code,
+allowing you to execute Python code and see the results directly within the editor.
+• PyCharm:
+• PyCharm is a powerful integrated development environment (IDE) for Python
+development. It includes an interactive Python console where you can execute Python
+code and inspect variables.
+Operator precedence
+•Arithmetic operators ( have the highest precedence.
++, -, *, /, **)
+•Relational operators ( come after arithmetic operations.
+>, <, ==, !=)
+•Logical operators ( have the lowest precedence:
+not, and, or)
+highest precedence among logical operators.
+•nothas the
+•and comes next.
+•or has the lowest precedence.
+Example 1
+• result = 10 + 5 * 2 > 20 - 3
+• print(result)
+solution
+•Multiplication (
+*) first: 5 * 2→ 10
+•Addition (
++): 10 + 10→ 20
+•Subtraction (
+-): 20 -3→ 17
+•Comparison (
+>): 20 > 17→ True
+Output:
+True
+Example 2 Logical vs. Relational Operators
+result = 8 > 5 and 3 < 1 or 6 == 6
+print(result)
+Step-by-step solution:
+1.result = 8 > 5 and 3 < 1 or 6 == 6
+2.Relational operators first:
+•8 > 5 → True
+•3 < 1 → False
+•6 == 6 → True
+2.Logical AND (
+and): True and False→ False
+3.Logical OR (
+or): False or True→ True
+Output:
+True
+Mixing Arithmetic, Relational, and Logical
+Operators
+• result = not (3 + 2 * 2 > 7) and 4 % 2 == 0
+• print(result)
+Step-by-step solution:
+1.Multiplication (*) first: 2 * 2→ 4
+2.Addition (
++): 3 + 4→ 7
+3.Comparison (
+>): 7 > 7→ False
+4.Logical NOT (
+not): not False→ True
+5.Modulo (
+%): 4 % 2→ 0
+6.Comparison (
+==): 0 == 0→ True
+7.Logical AND (
+and): True and True→ True
+Output:
+True
+Bitwise vs. Logical Operators
+• result = 5 & 3 == 1 or not 0
+• print(result)
+solution
+1.Bitwise AND (&): 5 & 3
+•5 (101)
+•3 (011)
+•101 & 011 = 001 → 1
+2.Comparison (
+==): 1 == 1→ True
+3.Logical NOT (
+not): not 0→ True
+bitwise
+• result = 5 & 3 | 2
+• print(result)
+Solution
+result = 5 & 3 | 2
+•Bitwise AND (
+&) first:
+•5 (101)
+•3 (011)
+•101 & 011 = 001 → 1
+•Bitwise OR (
+|):
+•1 (001)
+•2 (010)
+•001 | 010 = 011 → 3 Output:
+3
+• result = (5 & 3) and (8 | 2)
+• print(result)
+•Bitwise AND (
+&):
+•5 (101)
+•3 (011)
+•101 & 011 = 001→ 1
+•Bitwise OR (
+|):
+•8 (1000)
+•2 (0010)
+•1000 | 0010 = 1010→ 10
+•Logical AND (
+and):
+•1 and 10 → 10 (since 1 is truthy, and returns the second value) Output: 10
+Bitwise and Arithmetic
+• result = (4 + 1) & (3 * 2) | (8 - 5)
+• print(result)
+solution
+•Arithmetic first:
+•4 + 1→ 5
+•3 * 2→ 6
+•8 -5→ 3
+•Bitwise AND (
+&):
+•5 (101)
+•6 (110)
+•101 & 110 = 100→ 4
+•Bitwise OR (
+|):
+•4 (100)
+•3 (011)
+Output:
+•100 | 011 = 111→ 7 7
+Three ways to import libraries
+• 1. Import the Entire Module (Standard Import)
+• Imports the whole module, and you access functions using the
+module name.
+• import math
+• print(math.sqrt(16)) # 4.0
+Import with an Alias (as)
+• 2. Import with an Alias (as)
+• You can give the module a shorter name using as
+• import numpy as np # Common alias for NumPy
+• print(np.array([1, 2, 3]))
+Import Specific Functions/Classes
+• Import Specific Functions/Classes (from ... import ...)
+• Imports only specific functions or classes instead of the whole
+module.
+• from math import sqrt, pi
+• print(sqrt(25)) # 5.0
+• print(pi) # 3.14159...
+Import Everything (from ... import *)
+• Import Everything (from ... import *)
+• Imports all functions and variables from a module.
+• from math import *
+• print(sin(0)) # 0.0
+• print(factorial(5)) # 120
